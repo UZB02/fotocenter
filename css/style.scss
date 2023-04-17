@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&family=Tilt+Prism&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.font {
+    font-family: 'Tilt Prism', cursive;
+}
+
+.textf {
+    font-family: 'Architects Daughter', cursive;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+header {
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    nav {
+        background-color: darkslategray;
+        border-bottom: 1px solid rgba(255, 68, 0, 0.24);
+
+        .container {
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .burger {
+                cursor: pointer;
+                display: none;
+
+                div {
+                    height: 3px;
+                    width: 25px;
+                    background-color: #fff;
+                    margin: 5px;
+                }
+            }
+
+            .left {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                h3 {
+                    font-size: 1.5em;
+                    color: orangered;
+                    font-family: 'Tilt Prism', cursive;
+                }
+
+                img {
+                    width: 3em;
+                }
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                a {
+                    color: orangered;
+                    font-size: 1.1em;
+                    font-weight: inherit;
+                    letter-spacing: 1px;
+                    transition: all 0.5s ease;
+                    font-family: 'Lilita One', cursive;
+                }
+
+                a:hover {
+                    text-decoration: overline;
+                }
+
+                a:nth-child(5) {
+                    border: 2px solid orangered;
+                    padding: 7px;
+                    font-family: 'Lilita One', cursive;
+                    border-radius: 2px;
+                    transition: all 0.5s ease;
+                }
+
+                a:nth-child(5):hover {
+                    background-color: rgba(255, 68, 0, 0.635);
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.quti{
+    position: fixed;
+    transform: scale(0);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: rgba(0, 0, 0, 0.363);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    height: 100vh;
+    transition: all .5s ease-in-out;
+    .box{
+        width: 50%;
+        height: 50vh;
+        position: relative;
+        top: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: darkslategrey;
+            box-shadow: 0 0 10px 5px darkslategray;
+            transform: scale(1.1);
+            border: 1px solid orangered;
+            width: 50%;
+            height: 50vh;
+            padding: 30px 0;
+            border-radius: 5px;
+            gap: 30px;
+            input{
+                width: 80%;
+                padding: 10px 15px;
+                outline: none;
+                border: 2px solid rgba(255, 68, 0, 0.685);
+                color: #fff;
+                border-radius: 5px;
+                font-size: 1em;
+                background-color: transparent;
+            }
+            input:hover{
+                border-color: orangered;
+            }
+            input:nth-child(5){
+                width: 50%;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-family: 'Lilita One', cursive;
+            }
+            input:nth-child(5):hover{
+                background-color: rgba(255, 68, 0, 0.635);
+            }
+        }
+    }
+}
+
+.page1 {
+    width: 100%;
+    padding: 50px 0;
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+
+            .top {
+                width: 60%;
+                color: orangered;
+
+                h1 {
+                    font-size: 5em;
+                    font-family: 'Tilt Prism', cursive;
+                }
+
+                p {
+                    letter-spacing: 1px;
+                    font-size: 18px;
+                    font-family: 'Lilita One', cursive;
+                }
+            }
+
+            .ost {
+                svg {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .right {
+            width: 40%;
+
+            img {
+                width: 400px;
+            }
+        }
+    }
+}
+
+.page2 {
+    width: 100%;
+    background-color: rgb(57, 57, 57);
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px 0;
+        gap: 30px;
+
+        .top {
+            h2 {
+                font-family: 'Tilt Prism', cursive;
+                font-size: 3em;
+                color: orangered;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: orangered;
+
+            .box {
+                width: 30%;
+
+                img {
+                    width: 100%;
+                    height: 450px;
+                    border: 1px solid orangered;
+                    border-radius: 3px;
+                    object-fit: cover;
+                }
+
+                h4 {
+                    font-family: 'Lilita One', cursive;
+                    font-weight: initial;
+                }
+            }
+
+        }
+
+        .tugma {
+            text-align: end;
+
+            button {
+                padding: 5px 10px;
+                background-color: transparent;
+                color: orangered;
+                font-family: 'Lilita One', cursive;
+                border: 2px solid orangered;
+                border-radius: 3px;
+                cursor: pointer;
+                transition: all 0.5s ease;
+            }
+
+            button:hover {
+                background-color: rgba(255, 68, 0, 0.635);
+                color: #fff;
+            }
+        }
+    }
+}
+
+.page3 {
+    width: 100%;
+    background: linear-gradient(45deg, rgba(1, 53, 12, 0.852), darkslategray);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 80px 0;
+        gap: 80px;
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            color: orangered;
+
+            .left {
+                width: 51%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+
+                h1 {
+                    font-family: 'Tilt Prism', cursive;
+                    font-size: 3.5em;
+                }
+
+                h3 {
+                    font-family: 'Lilita One', cursive;
+                    font-weight: initial;
+                }
+
+                p {
+                    font-family: 'Lilita One', cursive;
+                    width: 80%;
+                    font-size: 1.1em;
+                    letter-spacing: 1px;
+                }
+
+                button {
+                    width: 150px;
+                    padding: 5px 0;
+                    background-color: transparent;
+                    border: 2px solid orangered;
+                    color: orangered;
+                    font-size: 0.9em;
+                    font-weight: initial;
+                    font-family: 'Lilita One', cursive;
+                    letter-spacing: 0.5px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    transition: all 0.5s ease;
+                }
+
+                button:hover {
+                    background-color: rgba(255, 68, 0, 0.635);
+                    color: #fff;
+                }
+            }
+
+            .right {
+                width: 35%;
+
+                img {
+                    border: 1px solid orangered;
+                    border-radius: 3px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.page4 {
+    width: 100%;
+    background: linear-gradient(45deg, darkslategray, rgba(1, 53, 12, 0.852));
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 80px 0;
+        color: orangered;
+        gap: 20px;
+
+        .top {
+            text-align: center;
+
+            h3 {
+                font-family: 'Lilita One', cursive;
+                font-weight: initial;
+            }
+
+            h1 {
+                font-family: 'Tilt Prism', cursive;
+                font-size: 3em;
+            }
+        }
+
+        .bottom {
+            width: 60%;
+            height: 650px;
+            // background: aqua;
+            text-align: center;
+
+            img {
+                width: 100%;
+                border: 1px solid orangered;
+                border-radius: 3px;
+            }
+
+            .img1 {
+                position: relative;
+                top: -400px;
+                right: 90px;
+                width: 150px;
+                height: 250px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .img2 {
+                position: relative;
+                top: -720px;
+                left: 650px;
+                width: 150px;
+                height: 220px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .img3 {
+                position: relative;
+                top: -600px;
+                left: 500px;
+                width: 150px;
+                height: 250px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            button {
+                position: relative;
+                top: -650px;
+                font-size: 1.02em;
+                letter-spacing: 0.5px;
+                font-family: 'Lilita One', cursive;
+                padding: 5px 10px;
+                background-color: transparent;
+                border: 2px solid orangered;
+                color: orangered;
+                cursor: pointer;
+                transition: all 0.5s ease;
+                border-radius: 3px;
+            }
+
+            button:hover {
+                background-color: rgba(255, 68, 0, 0.635);
+                color: #fff;
+            }
+        }
+
+    }
+}
+
+.page5 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.902);
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 80px 0;
+        color: orangered;
+        gap: 55px;
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+
+            h1 {
+                font-family: 'Tilt Prism', cursive;
+                text-align: center;
+                width: 50%;
+                font-size: 5em;
+                font-weight: bold;
+            }
+
+            p {
+                font-family: 'Lilita One', cursive;
+                width: 50%;
+                text-align: center;
+                font-weight: 200;
+                letter-spacing: 0.5px;
+            }
+
+            button {
+                font-family: 'Lilita One', cursive;
+                padding: 5px 15px;
+                background-color: transparent;
+                border: 2px solid orangered;
+                color: orangered;
+                border-radius: 3px;
+                font-size: 0.9em;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+                transition: all 0.5s ease;
+            }
+
+            button:hover {
+                background-color: rgba(255, 68, 0, 0.635);
+                color: #fff;
+            }
+        }
+
+        .centre {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+
+            .left {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                h2 {
+                    font-family: 'Lilita One', cursive;
+                    font-weight: 200;
+                    font-size: 15px;
+                }
+            }
+
+            .markaz {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                a {
+                    font-family: 'Lilita One', cursive;
+                    color: orangered;
+                    transition: all 0.5s ease;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                svg {
+                    cursor: pointer;
+                    transition: all 0.5s ease;
+                }
+
+                svg:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid orangered;
+            padding-top: 20px;
+
+            .left {
+                h2 {
+                    font-size: 1em;
+                    font-weight: 200;
+                }
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                a {
+                    color: orangered;
+                    transition: all 0.5s ease;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.active {
+    left: 0 !important;
+}
+
+.hover1 {
+    display: none;
+}
+
+.hover2 {
+    transform: rotate(135deg);
+    border-radius: 50px;
+}
+
+.hover3 {
+    top: -8PX;
+    border-radius: 50px;
+    transform: rotate(-135deg);
+}
+.block{
+    display: block;
+    transform: scale(1);
+}
