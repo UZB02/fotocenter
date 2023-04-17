@@ -7,9 +7,16 @@ const Line3 = document.querySelector(".line3");
 
 const Contact = document.querySelector('.conTact');
 const Quti = document.querySelector('.quti');
+const Exit = document.querySelector('.exit');
+
 
 Contact.addEventListener('click', () => {
+  console.log('sa');
   Quti.classList.toggle('block');
+});
+
+Exit.addEventListener("click", () => {
+  Quti.classList.remove("block");
 });
 
 // Contact.addEventListener.apply('click', () => {

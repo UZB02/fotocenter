@@ -133,6 +133,17 @@ header nav .container .right a:nth-child(5):hover {
   border-radius: 5px;
   gap: 30px;
 }
+.quti .box form .exit {
+  width: 100%;
+}
+.quti .box form .exit h2 {
+  color: #fff;
+  font-family: "Lilita One", cursive;
+  cursor: pointer;
+  position: relative;
+  text-align: end;
+  padding: 0 10px;
+}
 .quti .box form input {
   width: 80%;
   padding: 10px 15px;
@@ -146,13 +157,13 @@ header nav .container .right a:nth-child(5):hover {
 .quti .box form input:hover {
   border-color: orangered;
 }
-.quti .box form input:nth-child(5) {
+.quti .box form input:nth-child(6) {
   width: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: "Lilita One", cursive;
 }
-.quti .box form input:nth-child(5):hover {
+.quti .box form input:nth-child(6):hover {
   background-color: rgba(255, 68, 0, 0.635);
 }
 

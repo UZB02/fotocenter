@@ -919,15 +919,11 @@
     }
 
     .quti {
-        // transform: scale(1);
-        // background-color: black;
         .box {
             width: 60%;
             top: 100px;
-            // background-color: aqua;
             form {
                 position: absolute;
-                // background-color: red;
                 width: 80%;
                 height: auto;
                 transform: scale(1);
@@ -939,7 +935,6 @@
         width: 100%;
 
         .container {
-            // width: 80%;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -1133,6 +1128,22 @@
         }
     }
 }
+@media screen and (max-width: 600px){
+    .quti {
+            .box {
+                width: 80%;
+                top: 100px;
+    
+                form {
+                    position: absolute;
+                    width: 80%;
+                    height: auto;
+                    transform: scale(1);
+                }
+            }
+        }
+    
+}
 
 @media screen and(max-width:450px) {
     .container {
@@ -1185,15 +1196,10 @@
     }
 
         .quti {
-            // transform: scale(1);
-            // background-color: black;
-    
             .box {
                 width: 100%;
                 top: 60px;
-                // background-color: aqua;
                 form {
-                    // background-color: red;
                     width: 80%;
                     height: auto;
                     transform: scale(1);
@@ -1306,15 +1312,13 @@
 
     .quti{
     position: fixed;
-    // transform: scale(0);
     width: 100%;
-    // background-color: rgba(0, 0, 0, 0.363);
     backdrop-filter: blur(5px);
     z-index: 999;
     height: 100vh;
     transition: all .5s ease-in-out;
     .box{
-        width: 50%;
+        width: 80%;
         height: 50vh;
         position: relative;
         top: 100px;
@@ -1331,7 +1335,7 @@
             box-shadow: 0 0 10px 5px darkslategray;
             transform: scale(1.1);
             border: 1px solid orangered;
-            width: 50%;
+            width: 100%;
             height: 50vh;
             padding: 30px 0;
             border-radius: 5px;
@@ -1349,31 +1353,18 @@
             input:hover{
                 border-color: orangered;
             }
-            input:nth-child(5){
+            input:nth-child(6){
                 width: 50%;
                 cursor: pointer;
                 transition: all 0.3s ease;
                 font-family: 'Lilita One', cursive;
             }
-            input:nth-child(5):hover{
+            input:nth-child(6):hover{
                 background-color: rgba(255, 68, 0, 0.635);
             }
         }
     }
 }
-// .quti{
-//     // transform: scale(1);
-//     background-color: black;
-//     .box{
-//         width: 100%;
-//         // background-color: aqua;
-//         form{
-//             // background-color: red;
-//             width: 80%;
-//             transform: scale(1);
-//         }
-//     }
-// }
     .page5{
         .container{
             .top{
